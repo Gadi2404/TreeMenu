@@ -1,0 +1,78 @@
+body > .treeMenu{ display:inline-block; vertical-align:top; width:200px; min-height:300px; padding:10px; margin:10px; border:1px solid #CCC; }
+
+.treeMenu{
+  $indent : 15px;
+
+  &.treeMenu--secondery{
+    .list-item,
+    .cu-checkbox{ display:none; }
+    .list-item.show{ display:block; }
+  }
+
+  .list-item{
+    margin-top: 5px;
+    padding-left: $indent;
+    cursor:pointer;
+    position: relative;
+  }
+
+
+  .cu-checkbox{
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #948B8B;
+    display: inline-block;
+    position: relative;
+  }
+
+
+  .checked:before{
+    position: absolute;
+    left: 3px;
+    content: '';
+    display: block;
+    width: 3px;
+    height: 7px;
+    transform: rotate(45deg);
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+  }
+
+  label > :checked ~ .cu-checkbox{
+    background-color: #fff;
+
+    &:before{
+      position: absolute;
+      left: 3px;
+      content: '';
+      display: block;
+      width: 3px;
+      height: 7px;
+      transform: rotate(45deg);
+      border-right: 1px solid blue;
+      border-bottom: 1px solid blue;
+    }
+  }
+
+  .has-checked{
+    background-color: blue;
+  } 
+
+  .openCloseBranch{
+    position: absolute;
+    left: 0;
+    font-size:15px;
+    padding-right: 8px;
+    line-height: 1;
+    &:before{
+      content: '\25E2';
+      display: inline-block;
+    }
+
+    &.close:before{
+      content: '\25B6';
+      display: inline-block;
+    }
+  }
+}

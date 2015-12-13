@@ -1,0 +1,64 @@
+body > .treeMenu {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #CCC; }
+
+.treeMenu.treeMenu--secondery .list-item,
+.treeMenu.treeMenu--secondery .cu-checkbox {
+  display: none; }
+.treeMenu.treeMenu--secondery .list-item.show {
+  display: block; }
+.treeMenu .list-item {
+  margin-top: 5px;
+  padding-left: 15px;
+  cursor: pointer;
+  position: relative; }
+.treeMenu .cu-checkbox {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #948B8B;
+  display: inline-block;
+  position: relative; }
+.treeMenu .checked:before {
+  position: absolute;
+  left: 3px;
+  content: '';
+  display: block;
+  width: 3px;
+  height: 7px;
+  transform: rotate(45deg);
+  border-right: 1px solid blue;
+  border-bottom: 1px solid blue; }
+.treeMenu label > :checked ~ .cu-checkbox {
+  background-color: #fff; }
+  .treeMenu label > :checked ~ .cu-checkbox:before {
+    position: absolute;
+    left: 3px;
+    content: '';
+    display: block;
+    width: 3px;
+    height: 7px;
+    transform: rotate(45deg);
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue; }
+.treeMenu .has-checked {
+  background-color: blue; }
+.treeMenu .openCloseBranch {
+  position: absolute;
+  left: 0;
+  font-size: 15px;
+  padding-right: 8px;
+  line-height: 1; }
+  .treeMenu .openCloseBranch:before {
+    content: '\25E2';
+    display: inline-block; }
+  .treeMenu .openCloseBranch.close:before {
+    content: '\25B6';
+    display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */

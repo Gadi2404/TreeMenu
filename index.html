@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by Gadi</title>
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      body{ font:14px Arial; }
+    </style>
+  </head>
+  <body>
+
+    <div class="treeMenu"></div> 
+
+    <div class="treeMenu treeMenu--secondery"></div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/treeMenu.js"></script>
+
+
+    <script>
+
+          var listObj = [{
+            name: 'USA',
+            items: [{
+              name: 'Washington'
+            }, {
+              name: 'New-York',
+              items: [{
+                name: 'Manhattan'
+              }, {
+                name: 'New-York-City',
+                items: [{
+                  name: 'city'
+                }]
+              }]
+            }, {
+              name: 'california',
+              items: [ 
+                      { name: 'compton' }, 
+                      { name: 'miami'},
+                      { name: 'abc'}
+                  ]
+            }]
+          }, {
+            name: 'japan'
+          }, {
+            name: 'israel'
+          }];
+
+
+        function getItemIndexesPath(item){
+            var indexes = [];
+
+            $(item).parents('li').each(function(){
+                indexes.push( $(this).index() );
+            })
+
+            return indexes.reverse();
+        }
+
+
+        function markMirrorPath(elm, branch, state){
+            var indexes = getItemIndexesPath(elm),
+                currentElm = $('.secondery-list');
+
+            for(var i in indexes){
+                currentElm = currentElm.find('> ul > li').eq( indexes[i] ).toggleClass('show', elm.checked);
+            }
+        }
+
+        var tree = new TreeMenu({ data:listObj, onChange:markMirrorPath });
+
+
+        $('.treeMenu:first').append( tree.treeElm );
+        $('.secondery-list').append( tree.treeElm.clone() );
+
+    </script>
+
+  </body>
+</html>
