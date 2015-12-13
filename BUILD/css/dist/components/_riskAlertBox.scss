@@ -1,0 +1,46 @@
+.riskAlertBox{
+    color: C(white);
+    padding: 1.3em 2.2em;
+    position: relative;
+    font-size: 1.1em;
+
+    display         : flex;
+    flex-direction  : row;
+    flex-wrap       : nowrap;
+    justify-content : space-between;
+    align-content   : stretch;
+    align-items     : center;
+
+
+    &.risk-level{ font-size:1.72em; font-weight:300; color:C(white);
+        @each $value, $color in $riskLevelsColors {
+            &--#{$value}{
+                color:$color;
+                @if $value != 'none'{
+                    .btn{ background:$color; }
+                }
+            }
+
+        }
+    }
+
+    .icon-warning{ font-size:3.5em; margin-right:.6em; }
+
+    .texts{ font-weight:300; flex:1 0;
+        .riskLevelTitle{ text-transform:capitalize; font-size:1.7em; display:block; line-height:1; }
+    }
+
+    .btn{ font-size:1.1em; margin-left:.5em; //color:C(white);
+        &:hover{  }
+        &:active{ box-shadow:none; margin-bottom:-2px; }
+        &--0{
+            &:active{margin-bottom: 0;}
+        }
+    }
+
+    &.level2{
+        $level-color:C(pink);
+        color:$level-color;
+        &::before{ border-color:$level-color; }
+    }
+}

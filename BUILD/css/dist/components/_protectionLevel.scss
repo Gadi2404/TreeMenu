@@ -1,0 +1,27 @@
+.protectionLevel{
+    background: C(white);
+
+    header{ text-align:center; }
+
+    .doughnutChart{
+        @include doughnutChart(70, 6px);
+        svg{ margin:1em 0; }
+        //.circle-back { stroke:rgba(black,.1); stroke-width: 10px; }
+        .info{ font-size:1.3em; }
+    }
+
+    &.risk-level{
+        @each $value, $color in $riskLevelsColors {
+            &--#{$value}{ color:$color; }
+        }
+    }
+
+    .hBars__bar{
+        display: none;
+        > div{ background:currentColor; height:9px; }
+    }
+
+    .riskAlertBox{
+        border-top:1px solid C(gray5);
+    }
+}

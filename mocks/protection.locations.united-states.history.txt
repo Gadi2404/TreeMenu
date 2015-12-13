@@ -1,0 +1,62 @@
+[
+    {
+        riskLevel : '',
+        value     : 2,
+        label     : 'jan'
+    },
+    {
+        riskLevel : '',
+        value     : 22,
+        label     : 'feb'
+    },
+    {
+        riskLevel : '',
+        value     : 33,
+        label     : 'mar'
+    },
+    {
+        riskLevel : '',
+        value     : 41,
+        label     : 'apr'
+    },
+    {
+        riskLevel : '',
+        value     : 35,
+        label     : 'may'
+    },
+    {
+        riskLevel : '',
+        value     : 17,
+        label     : 'jun'
+    },
+    {
+        riskLevel : '',
+        value     : 100,
+        label     : 'jul'
+    },
+    {
+        riskLevel : '',
+        value     : 87,
+        label     : 'aug'
+    },
+    {
+        riskLevel : '',
+        value     : 93,
+        label     : 'sep'
+    },
+    {
+        riskLevel : '',
+        value     : 56,
+        label     : 'oct'
+    },
+    {
+        riskLevel : '',
+        value     : 61,
+        label     : 'nov'
+    },
+    {
+        riskLevel : '',
+        value     : 98,
+        label     : 'dec'
+    }
+]

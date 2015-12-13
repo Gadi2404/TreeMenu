@@ -1,0 +1,222 @@
+[
+    {
+        "host" : "JAPRDWINEXCH01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "JAPRDWINSQL02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "JADEVWINSQL37",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JADEVWINSQL09",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JAPRDWINSQL19",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JADEVWINSQL23",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINSQL08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINSQL17",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINSQL02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINSQL05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINSQL03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JAPRDWINSQL08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINSQL05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINSQL03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JAPRDWINSQL01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "JAPRDWINSQL02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "JADEVLNXORA07",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JADEVWINORA09",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JAPRDWINORA01",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINORA08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JAPRDWINORA01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "JAPRDWINORA02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "JADEVWINORA07",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JADEVWINORA09",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JAPRDWINORA01",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "JAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINORA08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JADEVLNXSAP03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "JAPRDWINSAP01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "JAPRDWINSAP02",
+        "type" : "Host",
+        "category" : "no backup"
+    }
+]

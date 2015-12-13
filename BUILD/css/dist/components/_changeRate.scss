@@ -1,0 +1,45 @@
+.changeRate{
+    position: relative;
+
+    .title{
+        font-size:1em;
+        display:block;
+        margin-bottom:.8em;
+    }
+
+    .value{
+        display:inline-block;
+        font-weight:300;
+        font-size:4em;
+        line-height: .8;
+
+        @include breakpoint(l){
+            font-size:3em;
+            line-height: .9;
+        }
+
+        &::after{ font-size:.3em; vertical-align:top; }
+    }
+
+    .icon{
+        $size: 23px;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 14px;
+        margin: auto;
+
+        width: $size;
+        height: $size;
+        font-size: 20px;
+        line-height: $size;
+        border-radius: 50%;
+        background: C(white);
+        text-align: center;
+        color:C(green);
+        box-shadow:0 0 0 2px rgba(white, .4);
+
+        &.icon-arrow-down{ color:C(red); line-height:$size + 2; }
+    }
+}

@@ -1,0 +1,469 @@
+[
+    {
+        "host" : "DEPRDWINEXCH01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "DEPRDWINEXCH02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "DEDEVWINSQL01",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "DEDEVWINSQL02",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "DEPRDWINSQL01",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "DEPRDWINSQL02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "DEDEVLNXORA17",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "DEDEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "BADEVWINSQL01",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "BADEVWINSQL02",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "BAPRDWINSQL01",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "BAPRDWINSQL02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "BADEVLNXORA15",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "BADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "BAPRDLNXORA05",
+        "type" : "Host",
+        "category" : "RPO exceeded"
+    },
+    {
+        "host" : "NYPRDWINEXCH01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "NYPRDWINEXCH02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "NYDEVWINEXCH07",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "NYDEVWINEXCH09",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "NYPRDWINSQL01",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "NYPRDWINSQL02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "NYDEVWINSQL08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "NYDEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "NYPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "NYDEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "NYDEVLNXSAP03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "NYPRDWINSAP02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "NYDEVWINSAP05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "NYDEVLNXSAP03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "BOPRDWINEXCH06",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "BODEVWINEXCH13",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "BODEVWINEXCH04",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LAPRDWINEXCH01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "LAPRDWINSQL02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "LADEVWINSQL37",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LADEVWINSQL09",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LAPRDWINSQL19",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LADEVWINSQL23",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSQL08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSQL17",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSQL02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSQL05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSQL03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINSQL08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSQL05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSQL03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINSQL01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "LAPRDWINSQL02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "LADEVLNXORA07",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LADEVWINORA09",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LAPRDWINORA01",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINORA08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINORA01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "LAPRDWINORA02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "LADEVWINORA07",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LADEVWINORA09",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LAPRDWINORA01",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINORA08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXORA03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINORA02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINORA05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXSAP03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINSAP01",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "LAPRDWINSAP02",
+        "type" : "Host",
+        "category" : "no backup"
+    },
+    {
+        "host" : "LADEVWINSAP07",
+        "type" : "Backup Client",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LADEVWINSAP09",
+        "type" : "Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LAPRDWINSAP01",
+        "type" : "Virtual Host",
+        "category" : "copy expired"
+    },
+    {
+        "host" : "LAPRDWINSAP02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSAP08",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXSAP03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINSAP02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSAP05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXSAP03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINSAP02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSAP05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXSAP03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSAP05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXSAP07",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LAPRDWINSAP02",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVWINSAP05",
+        "type" : "Virtual Host",
+        "category" : "RTO exceeded"
+    },
+    {
+        "host" : "LADEVLNXSAP03",
+        "type" : "Backup Client",
+        "category" : "RTO exceeded"
+    }
+
+    
+]

@@ -1,0 +1,73 @@
+//////////////////////
+// Drop-down menu
+.dropDownMenu{ opacity:0; top:0;  background:C(darkblue); position:absolute; line-height:1; left:0; z-index:1; border-radius:5px; overflow:hidden; max-height:0; xtransition:opacity 0.2s $ease-out, top 0.2s $ease-out;
+    //&:hover{ box-shadow:0 0 6px -2px #000; }
+    &.navRight{ left:auto; right:0; }
+    &.up{ top:auto; bottom:100%; }
+    > a{ display:block; padding:0 1.5em; line-height:3.5; color:inherit; border-top:1px solid rgba(white,0.1); white-space:nowrap; margin-top:-60px; opacity:0; text-decoration:none;
+        &.active{ color:#FFF; background:rgba(white,.1); }
+        &:hover{ transition:0s !important; border-top-color:transparent; color:#FFF;
+          > i{ opacity:0.8; transition:0s; }
+        }
+    }
+    i{ display:inline-block; vertical-align:middle; margin-right:0.6em; font-size:1.5em; opacity:0.3; transition:0.15s; }
+    span{ display:inline-block; vertical-align:middle; }
+}
+
+@mixin showDropDown{
+    .dropDownMenu{ max-height:none; top:100%; opacity:1;
+        &.up{ top:auto; bottom:100%;
+            > a{
+                @for $i from 10 to 1{
+                    &:nth-child(#{$i + 1}){ transition-delay:60ms * $i; }
+                }
+            }
+        }
+        > a{ margin-top:0; opacity:1; transition:.2s cubic-bezier(0,.8,.5,1.35); transition-property:margin, opacity;
+            @for $i from 1 to 10{
+                &:nth-child(#{$i + 1}){ transition-delay:60ms * $i; }
+            }
+        }
+    }
+}
+
+/////////////////////////////////////////////////////
+// dropdown menus which open on "hover"
+.hasNav{ position:relative;
+    &:not(.touch):hover, &.on{
+        @include showDropDown;
+    }
+
+    .hasNav.on > .dropDownMenu.up{ margin-bottom:15px; }
+}
+
+/////////////////////////////////////////////////////
+// dropdown menus which open on "click"
+.dropDownMenuLabel{ position:relative;
+    &.active{
+        > i{ color:C(blue2); }
+    }
+
+    > input{
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+
+        &:checked{
+            ~ .dropDownMenu{ max-height:none; top:100%; opacity:1;
+                &.up{ top:auto; bottom:100%;
+                    > a{
+                        @for $i from 10 to 1{
+                            &:nth-child(#{$i + 1}){ transition-delay:60ms * $i; }
+                        }
+                    }
+                }
+                > a{ margin-top:0; opacity:1; transition:.2s cubic-bezier(0,.8,.5,1.35); transition-property:margin, opacity;
+                    @for $i from 1 to 10{
+                        &:nth-child(#{$i + 1}){ transition-delay:60ms * $i; }
+                    }
+                }
+            }
+        }
+    }
+}

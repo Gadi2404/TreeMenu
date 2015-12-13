@@ -1,0 +1,74 @@
+#header{
+    $header-height : mg($dashboard, header-height);
+
+    display: flex;
+    height: $header-height;
+    // padding:0 layout(side-padding);
+    background: C(white);
+    color: C(gray2);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 6px rgba(black,.2);
+
+    .header__dpa{
+        background: C(blue2);
+        background:linear-gradient(to top , darken(C(blue2),15) 0%, C(blue2) 70%) 0 0;
+        color: C(white);
+        width: mg($dashboard, sidebar-width);
+
+        .icon-menu{ font-size:24px; margin-left:10px; vertical-align:middle; }
+        .icon-emc_logo{ font-size:1.3em; margin-left:10px; line-height:$header-height; vertical-align:middle; }
+    }
+
+
+
+    .header__nav{ line-height:$header-height; flex:1;
+        a{ color:C(gray2); display:inline-block; padding:0 1.1em; font-size:1.1em; font-weight:500; text-decoration:none;
+            &.active{ box-shadow:0 -5px 0 C(blue2) inset; color:C(blue2); }
+            &:hover{ color:C(black); }        }
+    }
+
+    .user{
+        &__name{
+            line-height:$header-height;
+            vertical-align:middle;
+            color: C(blue1);
+        }
+
+        &__avatar{
+            $size : 40px;
+            border-radius: 50%;
+            width: $size;
+            height: $size;
+            border:2px solid C(blue1);
+            padding:1px;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right:4px;
+
+            &__image{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .addToFavorites{
+        > span{
+            line-height:$header-height;
+            width:50px;
+            text-align:center;
+            color:C(white);
+            border-radius:0;
+            background:linear-gradient(to top , desaturate(lighten(C(blue2), 15), 66%) 0%, desaturate(lighten(C(blue2), 20), 66%) 70%) 0 0;
+            margin-left:1em;
+            font-size: 1.2em;
+            transition:80ms;
+        }
+
+        input:checked{
+            + span{ color:C(blue1); }
+        }
+    }
+}

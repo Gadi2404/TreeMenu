@@ -1,0 +1,53 @@
+.ttip.shepherd-step{ min-width:230px; max-width:330px; font-size:1.1em;
+    $innerPadding : .6em;
+    $triangleSize: 26px;
+
+    &::before{
+        top:-$triangleSize;
+        width:$triangleSize;
+        font-size:$triangleSize;
+    }
+
+    &.tether-element-attached-top{
+        margin-top:$triangleSize / 1.5;
+    }
+
+    &.tether-element-attached-bottom{
+       margin-bottom:$triangleSize / 1.5;
+       &::before{ bottom:-#{$triangleSize - 1}; }
+    }
+
+    &.tether-element-attached-right{
+       margin-bottom:$triangleSize / 1.5;
+       &::before{ right:-#{$triangleSize - 3}; }
+    }
+
+    > .shepherd-content{
+        > header{ display:none; }
+        > .shepherd-text{
+            padding:$innerPadding/2 $innerPadding 0;
+
+            h4{ font-size:1.3em; font-weight:600; color:#444; }
+        }
+        > footer{ padding:$innerPadding 0 0;
+            > ul{ list-style:none; text-align:right;
+                > li{ display:inline-block; margin-left:.8em;
+                    > a{ padding:0.4em 1.5em; }
+                }
+            }
+        }
+    }
+
+
+    @include breakpoint(handheld){
+        $innerPadding :.5em;
+        min-width:160px; max-width:320px; font-size:.9em;
+        > .shepherd-content{
+            > .shepherd-text{ padding:0 $innerPadding; }
+            > footer{ padding:$innerPadding 0 0; }
+        }
+    }
+}
+
+
+

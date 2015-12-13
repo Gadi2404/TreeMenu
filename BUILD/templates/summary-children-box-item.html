@@ -1,0 +1,28 @@
+<div class="summaryChildren boxesGrid">
+    {{ items.forEach(function(item, i){ }}
+    <a href='{{= item.path.toLowerCase() }}' class='colItem summaryChildren__item {{= "risk-level--" + item.riskLevel }}'>
+        <header>
+            <h3>{{= item.name }}</h3>
+        </header>
+        <div class='doughnutChart'>
+            <script type='js/template-doughnut'>
+                { "value" : {{= item.protectionLevel }}, "radius":[70,68] }
+            </script>
+            <div class='info'>
+                <span class='percent' data-to='{{= item.protectionLevel }}'>0</span>
+                <span class='status'>Protected</span>
+            </div>
+        </div>
+        <div class="riskLevelWrap severityMark severityMark--{{= item.riskLevel}}">
+            <span>{{= item.riskLevel != "none" ? item.riskLevel : "No" }} risk</span>
+        </div>
+        {{ if( item.hosts.unprotected ){ }}
+        <span class='protectedHosts'>{{= item.hosts.unprotected }} Hosts are not protected</span>
+        <button class='btn btn--3 viewGaps' data-modal='{ "name":"protection.gaps", "data":"{{= item.path }}" }'>VIEW PROTECTION GAPS</button>
+        {{ } else{ }}
+        <span class='protectedHosts'>All hosts are protected</span>
+        <span class='btn detectedGaps'>NO GAPS DETECTED</span>
+        {{ } }}
+    </a>
+    {{ }); }}
+</div>

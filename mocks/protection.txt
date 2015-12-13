@@ -1,0 +1,119 @@
+[
+    {
+        "timeRange"        : ["1438435984", "1446125584"],
+        "name"             : "Locations",
+        "protectionLevel"  : 68,
+        "riskLevel"        : "medium",
+        "trend"            : "up",
+        "hosts"            : {
+            "unprotected"  : 137,
+            "total"        : 201
+        },
+
+        "items" : [
+            {
+                "timeRange"        : ["1438435984", "1446125584"],
+                "name"             : "United States",
+                "protectionLevel"  : 22,
+                "riskLevel"        : "high",
+                "trend"            : "up",
+                "hosts"            : {
+                    "unprotected"  : 93,
+                    "total"        : 120
+                },
+
+                "items" : [
+                    {
+                        "timeRange"        : ["1438435984", "1446125584"],
+                        "name"             : "Los Angeles",
+                        "protectionLevel"  : 95,
+                        "riskLevel"        : "medium",
+                        "trend"            : "up",
+                        "hosts"            : {
+                            "unprotected"  : 61,
+                            "total"        : 64
+                        }
+                    },
+                    {
+                        "timeRange"        : ["1438435984", "1446125584"],
+                        "name"             : "Denver",
+                        "protectionLevel"  : 44,
+                        "riskLevel"        : "high",
+                        "trend"            : "up",
+                        "hosts"            : {
+                            "unprotected"  : 8,
+                            "total"        : 18
+                        }
+                    },
+                    {
+                        "timeRange"        : ["1438435984", "1446125584"],
+                        "name"             : "New York",
+                        "protectionLevel"  : 78,
+                        "riskLevel"        : "medium",
+                        "trend"            : "down",
+                        "hosts"            : {
+                            "unprotected"  : 14,
+                            "total"        : 18
+                        }
+                    },
+                    {
+                        "timeRange"        : ["1438435984", "1446125584"],
+                        "name"             : "Boston",
+                        "protectionLevel"  : 75,
+                        "riskLevel"        : "medium",
+                        "trend"            : "up",
+                        "hosts"            : {
+                            "unprotected"  : 3,
+                            "total"        : 4
+                        }
+                    },
+                    {
+                        "timeRange"        : ["1438435984", "1446125584"],
+                        "name"             : "Baltimore",
+                        "protectionLevel"  : 47,
+                        "riskLevel"        : "high",
+                        "trend"            : "up",
+                        "hosts"            : {
+                            "unprotected"  : 7,
+                            "total"        : 15
+                        }
+                    },
+                    {
+                        "timeRange"        : ["1438435984", "1446125584"],
+                        "name"             : "New Orleans",
+                        "protectionLevel"  : 100,
+                        "riskLevel"        : "none",
+                        "trend"            : "down",
+                        "hosts"            : {
+                            "unprotected"  : 0,
+                            "total"        : 1
+                        }
+                    }
+                ]
+            },
+            {
+                "timeRange"        : ["1438435984", "1446125584"],
+                "name"             : "Israel",
+                "protectionLevel"  : 100,
+                "riskLevel"        : "none",
+                "trend"            : "up",
+                "hosts"            : {
+                    "unprotected"  : 0,
+                    "total"        : 5
+                }
+            },
+            {
+                "timeRange"        : ["1438435984", "1446125584"],
+                "name"             : "Japan",
+                "protectionLevel"  : 52,
+                "riskLevel"        : "medium",
+                "trend"            : "down",
+                "hosts"            : {
+                    "unprotected"  : 44,
+                    "total"        : 76
+                }
+            }
+        ]
+    }
+]
+

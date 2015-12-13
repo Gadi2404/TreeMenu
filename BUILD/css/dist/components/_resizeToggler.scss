@@ -1,0 +1,59 @@
+.resizeToggler{
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+
+    &::before,
+    &::after{ content:''; background:C(offwhite); height:1px; flex:1 1; }
+
+    span{
+       // @include btn--2;
+        padding: 15px;
+        position: relative;
+        margin: 0 1em;
+        overflow: hidden;
+        transition: .3s $ease-out;
+
+        &::before, &::after{
+            font-family: icomoon;
+            content:$icon-chevron-down-content;
+            font-size: 1.3em;
+            position:absolute;
+            top    : 0;
+            bottom : 0;
+            left   : 0;
+            right  : 0;
+            text-align: center;
+            text-shadow: 0 5px;
+            line-height: 25px;
+            transform: rotate(180deg);
+            transition: .22s $ease-out;
+        }
+
+        &::after{
+            transform: rotate(180deg) translateY(-100%);
+        }
+    }
+
+    // &:hover{
+    //     > span{ // margin: 0 2em;
+    //         &::after{ transform:rotate(180deg); }
+    //         &::before{transform:rotate(180deg) translateY(100%); }
+    //     }
+    // }
+
+    &.toggled{
+        > span{
+            background: rgba(white, .1);
+            &::after{ transform:rotate(0); }
+            &::before{transform:rotate(0) translateY(-100%); }
+        }
+
+        // &:hover{
+        //     > span{
+        //         &::after{ transform:rotate(0) translateY(100%); }
+        //         &::before{transform:rotate(0); }
+        //     }
+        // }
+    }
+}

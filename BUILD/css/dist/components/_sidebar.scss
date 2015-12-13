@@ -1,0 +1,140 @@
+//////////////////////////////
+// Side menu - "minimized" state
+#sidebar__toggler{
+    &:checked{
+        ~ #sidebar{ width:0;
+            .sidebar__wrap{ width:0; }
+            .mainmenu__wrap{ transform:translateX(-100%); opacity:0; }
+            .sidebar__togglerBtn{ margin-right:-20px; color:#333; transform:rotate(180deg); }
+        }
+
+        ~ #page{ padding-left:layout(side-padding) * 2; }
+    }
+}
+
+///////////////
+// Side menu toggler button
+.sidebar__togglerBtn{ float:right; color:C(white); margin:8px; font-size:2em; line-height:1; transition:.33s $easeInOut;
+    &::after{ content:'\00AB'; display:block; }
+}
+
+
+//////////////////////////////
+// Side menu
+#sidebar{
+    $pad : 15px;
+
+    // position: absolute;
+    // top:0;
+    // bottom:0;
+    // left:0;
+    background: C(darkblue);
+    color: #FFF;
+    position: relative;
+    transition: .33s $easeInOut;
+    width: mg($dashboard, sidebar-width);
+
+
+    .sidebar__wrap{ width: mg($dashboard, sidebar-width); transition: .33s $easeInOut; }
+    /////////////////////////////////
+    // Fixed position state
+    &.fixed{
+        .sidebar__wrap{ position:fixed; top:0; }
+    }
+
+
+   // &::after{ content:''; position:absolute; top:0; bottom:0; right:0; width:6px; background:red; }
+
+    .mainmenu__wrap{
+        overflow: hidden;
+        width: mg($dashboard, sidebar-width);
+        position: relative;
+        clear: both;
+        transition:.33s $easeInOut;
+    }
+
+    .sidebar__search{
+       //margin-top: 24px;
+        line-height:38px;
+        background: rgba(#FFF, .07); color:C(white); padding-left:30px; position:relative;
+        &__input{ background:none; border:none; padding:8px; display:block; color:inherit; box-shadow:none;
+            &:valid ~ button{ display:block; }
+            &::-webkit-calendar-picker-indicator {
+              display: none;
+            }
+        }
+        &::before{ content:$icon-search-content; font-family:icomoon; opacity:.7; font-size:1em; margin-right:.5em; position:absolute; left:10px; top:-2px; height:100%; }
+        &__clear{ display:none; position:absolute; right:10px; top:0; bottom:0; margin:auto; width:18px; height:18px; padding:0; line-height:16px; color:C(white); border-radius:50%; text-align:center; font-size:1.1em;
+            &::before{ content:'\00D7'; }
+            &:hover{ background:rgba(C(red), .66); }
+        }
+    }
+
+
+    ///////////////
+    // menu tree
+    .mainmenu{
+        $trans : .12s ease-out;
+        padding: $pad;
+        font-size: .9em;
+        position: relative;
+        text-transform: capitalize;
+
+        &.searchMode{
+            dl > *{ display:none; }
+            .show, .show > dt{ display:block; }
+        }
+
+        &__noReults{
+            display: none;
+
+            &.show{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        a{ display:inline-block; position:relative;
+            @include severityMark;
+            &::before{ transition:.1s ease-out; position:absolute; top:0; left:0; transform:scale(0) translate(-200%, 50%); }
+            &:hover{ color:C(blue2); text-decoration:none }
+            &.active{ color:C(blue2);
+                &::before{ transform:scale(.8) translate(-200%, 50%); }
+            }
+        }
+
+        // main titles
+        > dl > dt{ text-transform:uppercase; font-size:1.1em; font-weight:500; }
+
+        dl{ color:C(white); padding-left:1.2em; margin-bottom:1em;
+            a{ color:C(white); opacity:.8; font-size:.8rem;
+                &:hover{ opacity:1; }
+            }
+            // "closed" state
+            &.closed{
+                dd{ display:none !important;
+                    dt{ margin-bottom:0; }
+                }
+                dt{
+                    &::after{ transform:rotate(90deg); }
+                }
+            }
+
+            dt{ position:relative; cursor:pointer; transition:$trans; margin-bottom:.4em;
+                &::after{ content:'❯'; font-size:.7rem; opacity:.5; position:absolute; right:0; top:1px; transition:$trans; transform:rotate(-90deg); }
+                &:hover{
+                    &::after{ opacity:1; }
+                }
+                .title{ font-weight:500; }
+            }
+
+            dd{ margin-left:1.4em; padding:.4em 0; transition:$trans;
+                dl{ padding:0; margin:0; }
+                td{  }
+                dd{  }
+                .closed dt{ margin-bottom:0; }
+                &:last-child{ padding-bottom:0; }
+            }
+        }
+    }
+}

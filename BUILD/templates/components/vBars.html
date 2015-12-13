@@ -1,0 +1,9 @@
+<div class='vBars'>
+    {{ items.forEach(function(item){ }}
+        <div class='vBars__item risk-level--{{= item.riskLevel }}'>
+            <div class='avarageLine' style="bottom:{{= avarage }}%"></div>
+            <span class='label'>{{= item.label }}</span>
+            <div class='bar' data-to="{{= item.value }}%" title="{{= item.value }}%"></div>
+        </div>
+    {{ }); }}
+</div>

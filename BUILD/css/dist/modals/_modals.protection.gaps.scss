@@ -1,0 +1,39 @@
+#modal{
+    .wrap > .content{ min-width:1000px; width:60%; }
+
+    .protectionGaps{
+        $protectionLevelWidth : 33%;
+
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+
+        /////////////////////
+        // protectionLevel
+        .protectionLevel{ display:inline-block; width:$protectionLevelWidth; border-right:1px solid C(gray5);
+            .btn{ display:none; }
+
+            header{  border:0; }
+            
+            header,
+            .riskAlertBox{ font-size:.9em; }
+
+            .info{ font-size:.85em; }
+
+        }
+
+
+        /////////////////////
+        // Segments chart
+        .segmentsChartWrap{ float:right; height:300px; width:100% - $protectionLevelWidth; }
+
+        .header--2:nth-child(n+2){ border-top:1px solid C(gray5); }
+        .protectionGapsTableWrap{ 
+            overflow: hidden;
+            flex: 1 1;
+            position: relative;
+
+            td,th { width: 1%; }
+        }
+    }
+}

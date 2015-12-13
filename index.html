@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <title>EMC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" href="/html-gateway-api/images/favicon.ico" type="image/ico">
+        <link rel="stylesheet" href="/html-gateway-api/css/main.css">
+        <script>
+            // google tag manager
+            window.dataLayer = window.dataLayer || [];
+
+            // report JavaScript errors
+            window.onerror = function(msg, url, linenumber){
+                // alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+                try{
+                    //ga('send', 'exception', {'exDescription': msg + ' *** URL: '+ url +' *** Line Number: ' + linenumber });
+                    dataLayer.push({event:'exception', label:msg + ' *** URL: '+ url +' *** Line Number: ' + linenumber });
+                }
+                catch(err){}
+            }
+        </script>
+    </head>
+    <body class='dashboard' data-init='main'>
+        <header id='header'>
+            <div class='header__dpa'>
+                <label class='icon-menu'></label>
+                <i class='icon-emc_logo'></i>
+            </div>
+            <nav class='header__nav'>
+                <a href='/protection' class='active'>Protection</a>
+                <a href='/utilization'>Utilization</a>
+                <a href='/chargeback'>Chargeback</a>
+                <a href='/optimization'>Optimization</a>
+            </nav>
+            <div class='user'>
+                <div class='user__avatar'><img class='user__avatar__image' src='/html-gateway-api/images/avatar_demo.jpg'></div>
+                <span class='user__name'>Steve Austin</span>
+            </div>
+            <label class='addToFavorites' title='Add to favorites'><input hidden type='checkbox'><span class='icon-star'></span></label>
+        </header>
+        <div class='mainWrapper'>
+            <input type='checkbox' id='sidebar__toggler' hidden>
+            <div id='sidebar'>
+                <div class='sidebar__wrap'>
+                    <label class='sidebar__togglerBtn' for='sidebar__toggler'></label>
+                    <div class='mainmenu__wrap'>
+                        <div class='sidebar__search'>
+                            <input class='sidebar__search__input' required type='text' list='sidebar__search__datalist' placeholder='Search' />
+                            <datalist id="sidebar__search__datalist"></datalist>
+                            <button class='sidebar__search__clear' title='Clear'></button>
+                        </div>
+                        <nav class='mainmenu unselectable'>
+                            <span class="mainmenu__noReults">No Results Found</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <section id='page' data-view='dashboard'>
+            </section>
+        </div>
+
+        <!-- Vendor scripts -->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+        <script>window.jQuery || document.write('<script src="/html-gateway-api/js/vendor/jquery.min.js"><\/script>')</script>
+        <!-- App scripts -->
+        <script src="/html-gateway-api/js/_all.js"></script>
+        <script src="/html-gateway-api/js/emc.js"></script>
+    </body>
+</html>
